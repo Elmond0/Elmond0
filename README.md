@@ -17,7 +17,7 @@ Former chef turned developer · Rimini → Florence
 
 An unconventional path: years spent in high-pressure professional kitchens in **Italy** and **England**, followed by a complete career change into IT. Today I study at **42 Firenze**, a tuition-free peer-to-peer coding school, where I work on real C and C++ projects every day.
 
-Working in kitchens taught me precision, managing priorities under pressure and teamwork — the same skills I now bring to my code.
+Working in kitchens taught me precision, priority management under pressure and teamwork — the same skills I now bring to my code.
 
 🔭 &nbsp;Currently: completing the **Common Core** at 42 Firenze<br/>
 🌱 &nbsp;Learning: **networking, AI agents, advanced C++**<br/>
@@ -79,7 +79,16 @@ Working in kitchens taught me precision, managing priorities under pressure and 
 | [**ft_printf**](https://github.com/Elmond0/ft_printf) | C | Reimplementation of `printf` using variadic arguments |
 | [**get_next_line**](https://github.com/Elmond0/get_next_line) | C | Reading a file descriptor line by line using a static buffer |
 
-> 🔒 **minishell**, **cub3D**, **Born2beroot** and **NetPractice** are complete but not published yet.
+**Team Projects**
+
+Built as a two-person team with [**@K0ff33Blu3**](https://github.com/K0ff33Blu3), following the 42 pair-project format.
+
+| Project | Stack | Description |
+|---|---|---|
+| [**minishell**](https://github.com/K0ff33Blu3/minishell) | C | Working Unix shell: lexing and parsing, pipes, redirections, environment variables and built-ins |
+| [**cub3D**](https://github.com/K0ff33Blu3/cub3D) | C / MiniLibX | 3D maze renderer built with raycasting, in the style of Wolfenstein 3D |
+
+> 🔒 **Born2beroot** and **NetPractice** are complete but not published yet.
 
 ---
 
