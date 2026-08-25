@@ -18,7 +18,7 @@ Percorso non convenzionale: anni in cucine professionali ad alto ritmo in **Ital
 La cucina mi ha insegnato precisione, priorità sotto pressione e lavoro di squadra — tutte competenze che porto direttamente nel codice.
 
 - 🔭 Attualmente: completando il **common core** alla 42 Firenze
-- 🌱 Sto approfondendo: **networking, concorrenza, C++ avanzato**
+- 🌱 Sto approfondendo: **networking, AI agents & LLM tooling, C++ avanzato**
 - 🎯 Obiettivo: primo ruolo come sviluppatore sistemista / backend
 - 🌍 Lingue: Italiano (madrelingua) · Inglese (fluente) · Spagnolo (fluente) · Francese (base)
 
@@ -63,13 +63,13 @@ La cucina mi ha insegnato precisione, priorità sotto pressione e lavoro di squa
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Activity
 
 <div align="center">
 
-![Elia's GitHub stats](https://github-readme-stats.vercel.app/api?username=Elmond0&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-&nbsp;
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Elmond0&layout=compact&theme=tokyonight&hide_border=true)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Elmond0&theme=minimal&hide_border=true&area=true&area_color=58a6ff&color=58a6ff&line=58a6ff&point=ffffff)](https://github.com/Elmond0)
+
+[![Trophy](https://github-profile-trophy.vercel.app/?username=Elmond0&theme=darkhub&no-frame=true&margin-w=6&row=1&column=7)](https://github.com/Elmond0)
 
 </div>
 
@@ -79,8 +79,8 @@ La cucina mi ha insegnato precisione, priorità sotto pressione e lavoro di squa
 
 | | |
 |---|---|
-| **42 Firenze** | Common Core — in corso (2024 → oggi) |
-| **Diploma Alberghiero** | I.P.S.S.A.R. Tonino Guerra, Cervia (2007 – 2012) |
+| **42 Firenze** | Common Core — in corso |
+| **Diploma Alberghiero** | I.P.S.S.A.R. Tonino Guerra, Cervia |
 
 ---
 
