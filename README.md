@@ -1,30 +1,21 @@
-<table>
-<tr>
-<td align="left" valign="middle">
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://badge.mediaplus.ma/darkblue/elmondo">
-  <source media="(prefers-color-scheme: light)" srcset="https://badge.mediaplus.ma/light/elmondo">
-  <img src="https://badge.mediaplus.ma/darkblue/elmondo" alt="42 cursus badge"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42-light.svg">
+  <img align="left" width="390" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42-dark.svg" alt="42 cursus badge"/>
 </picture>
-
-</td>
-<td align="right" valign="middle">
 
 <h1>Ciao, sono Elia 👋</h1>
 
-<p><b>Sviluppatore in formazione @ 42 Firenze</b><br>
-Ex chef convertito al codice · Rimini → Firenze</p>
+<b>Sviluppatore in formazione @ 42 Firenze</b><br/>
+Ex chef convertito al codice · Rimini → Firenze
 
 <p>
-<a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="30" alt="Email"/></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://profile.intra.42.fr/users/elmondo"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="30" alt="42 Intra"/></a>
+<a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="28" alt="Email"/></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://profile.intra.42.fr/users/elmondo"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="28" alt="42 Intra"/></a>
 </p>
 
-</td>
-</tr>
-</table>
+<br clear="left"/>
 
 ---
 
