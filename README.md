@@ -3,6 +3,11 @@
 <b>Software Developer in Training @ 42 Firenze</b><br/>
 Former chef turned developer · Rimini → Florence
 
+<p>
+<a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="28" alt="Email"/></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://profile.intra.42.fr/users/elmondo"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="28" alt="42 Intra"/></a>
+</p>
 
 ---
 
@@ -19,11 +24,6 @@ Working in kitchens taught me precision, managing priorities under pressure and 
 - 🎯 Goal: first role as a **systems / backend developer**
 - 🌍 Languages: Italian (native) · English (fluent) · Spanish (fluent) · French (basic)
 
-<p>
-<a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="28" alt="Email"/></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://profile.intra.42.fr/users/elmondo"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="28" alt="42 Intra"/></a>
-</p>
 
 <br clear="left"/>
 
