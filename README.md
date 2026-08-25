@@ -1,6 +1,6 @@
 <img align="left" width="390" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42.svg" alt="42 cursus badge"/>
 
-<h1>Ciao, sono Elia 👋</h1>
+<h3>Ciao, sono Elia 👋</h3>
 
 <b>Sviluppatore in formazione @ 42 Firenze</b><br/>
 Ex chef convertito al codice · Rimini → Firenze
