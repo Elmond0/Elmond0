@@ -31,6 +31,8 @@ Working in kitchens taught me precision, priority management under pressure and 
 
 ## 🛠️ Tech Stack
 
+<img align="right" width="400" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/languages.svg" alt="Language distribution across my repositories"/>
+
 **Programming Languages**
 
 ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
@@ -51,6 +53,8 @@ Working in kitchens taught me precision, priority management under pressure and 
 
 `Systems programming` `Sockets & TCP/IP` `Non-blocking I/O` `Concurrency & POSIX threads`
 `OOP & STL` `Manual memory management` `Algorithms & data structures` `Server hardening (LVM, UFW, SSH)`
+
+<br clear="right"/>
 
 ---
 

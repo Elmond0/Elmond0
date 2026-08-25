@@ -1,0 +1,37 @@
+name: Generate Language Chart
+
+on:
+  schedule:
+    - cron: "30 7 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/languages.yml"
+      - ".github/scripts/langchart.py"
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build language donut chart
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUT: profile/languages.svg
+        run: python3 .github/scripts/langchart.py
+
+      - name: Commit chart
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/languages.svg
+          git commit -m "chore: update language chart" || exit 0
+          git push
