@@ -4,8 +4,9 @@
 
 **Sviluppatore in formazione @ 42 Firenze** · Ex chef convertito al codice · Rimini → Firenze
 
-[![Email](https://img.shields.io/badge/Email-emondo1993%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)]
-[![42 Firenze](https://img.shields.io/badge/-42%20Firenze-000000?style=flat&logo=42&logoColor=white)](https://42firenze.it)
+<a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="30" alt="Email"/></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://42firenze.it"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="30" alt="42 Firenze"/></a>
 
 </div>
 
@@ -73,7 +74,7 @@ La cucina mi ha insegnato precisione, priorità sotto pressione e lavoro di squa
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Elmond0/Elmond0/output/github-contribution-grid-snake.svg">
 </picture>
 
-[![Trophy](https://github-profile-trophy.vercel.app/?username=Elmond0&theme=darkhub&no-frame=true&margin-w=6&row=1&column=7)](https://github.com/Elmond0)
+[![Streak](https://streak-stats.demolab.com/?user=Elmond0&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&background=00000000&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF)](https://github.com/Elmond0)
 
 </div>
 
