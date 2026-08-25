@@ -4,8 +4,8 @@
 
 **Sviluppatore in formazione @ 42 Firenze** · Ex chef convertito al codice · Rimini → Firenze
 
-[![Email](https://img.shields.io/badge/Email-emondo1993%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:emondo1993@gmail.com)
-[![42 Firenze](https://img.shields.io/badge/42-Firenze-000000?style=flat&logo=42&logoColor=white)](https://42firenze.it)
+[![Email](https://img.shields.io/badge/Email-emondo1993%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)]
+[![42 Firenze](https://img.shields.io/badge/-42%20Firenze-000000?style=flat&logo=42&logoColor=white)](https://42firenze.it)
 
 </div>
 
@@ -67,7 +67,11 @@ La cucina mi ha insegnato precisione, priorità sotto pressione e lavoro di squa
 
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Elmond0&theme=minimal&hide_border=true&area=true&area_color=58a6ff&color=58a6ff&line=58a6ff&point=ffffff)](https://github.com/Elmond0)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Elmond0/Elmond0/output/github-contribution-grid-snake.svg">
+</picture>
 
 [![Trophy](https://github-profile-trophy.vercel.app/?username=Elmond0&theme=darkhub&no-frame=true&margin-w=6&row=1&column=7)](https://github.com/Elmond0)
 
