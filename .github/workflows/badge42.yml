@@ -26,20 +26,18 @@ jobs:
       - name: Fetch and patch 42 badge
         run: |
           mkdir -p profile
-          for variant in "darkblue:dark" "light:light"; do
-            theme="${variant%%:*}"
-            name="${variant##*:}"
-            curl -sf "https://badge.mediaplus.ma/${theme}/${INTRA_LOGIN}" -o "profile/badge42-${name}.svg"
-            # Il servizio genera un viewBox 450x275 piu' corto del contenuto
-            # interno, che finisce tagliato in basso: lo allarghiamo a 310.
-            sed -i 's|viewBox="0 0 450 275" width="450" height="275"|viewBox="0 0 450 310" width="450" height="310"|' \
-              "profile/badge42-${name}.svg"
-          done
+          # Il servizio ignora il tema nell'URL: esiste una sola variante.
+          curl -sf "https://badge.mediaplus.ma/darkblue/${INTRA_LOGIN}" -o profile/badge42.svg
+          # Genera un viewBox 450x275 piu' corto del contenuto interno, che
+          # finisce tagliato in basso: lo allarghiamo a 310.
+          sed -i 's|viewBox="0 0 450 275" width="450" height="275"|viewBox="0 0 450 310" width="450" height="310"|' \
+            profile/badge42.svg
 
       - name: Commit badge
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/badge42-dark.svg profile/badge42-light.svg
+          git rm -q --ignore-unmatch profile/badge42-dark.svg profile/badge42-light.svg
+          git add profile/badge42.svg
           git commit -m "chore: update 42 badge" || exit 0
           git push

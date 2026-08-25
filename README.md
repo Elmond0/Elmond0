@@ -1,8 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42-light.svg">
-  <img align="left" width="390" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42-dark.svg" alt="42 cursus badge"/>
-</picture>
+<img align="left" width="390" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42.svg" alt="42 cursus badge"/>
 
 <h1>Ciao, sono Elia 👋</h1>
 
