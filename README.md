@@ -19,10 +19,10 @@ An unconventional path: years spent in high-pressure professional kitchens in **
 
 Working in kitchens taught me precision, managing priorities under pressure and teamwork — the same skills I now bring to my code.
 
-🔭 Currently: completing the **Common Core** at 42 Firenze
-🌱 Learning: **networking, AI agents & LLM tooling, advanced C++**
-🎯 Goal: first role as a **systems / backend developer**
-🌍 Languages: Italian (native) · English (fluent) · Spanish (fluent) · French (basic)
+🔭 &nbsp;Currently: completing the **Common Core** at 42 Firenze<br/>
+🌱 &nbsp;Learning: **networking, AI agents & LLM tooling, advanced C++**<br/>
+🎯 &nbsp;Goal: first role as a **systems / backend developer**<br/>
+🌍 &nbsp;Languages: Italian (native) · English (fluent) · Spanish (fluent) · French (basic)
 
 
 <br clear="right"/>
