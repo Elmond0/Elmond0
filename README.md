@@ -1,22 +1,30 @@
-<div align="center">
-
-# Ciao, sono Elia 👋
-
-**Sviluppatore in formazione @ 42 Firenze** · Ex chef convertito al codice · Rimini → Firenze
-
-<a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="30" alt="Email"/></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://profile.intra.42.fr/users/elmondo"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="30" alt="42 Intra"/></a>
-
-<br><br>
+<table>
+<tr>
+<td align="left" valign="middle">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://badge.mediaplus.ma/darkblue/elmondo">
   <source media="(prefers-color-scheme: light)" srcset="https://badge.mediaplus.ma/light/elmondo">
-  <img src="https://badge.mediaplus.ma/darkblue/elmondo" height="150" alt="42 cursus badge"/>
+  <img src="https://badge.mediaplus.ma/darkblue/elmondo" alt="42 cursus badge"/>
 </picture>
 
-</div>
+</td>
+<td align="right" valign="middle">
+
+<h1>Ciao, sono Elia 👋</h1>
+
+<p><b>Sviluppatore in formazione @ 42 Firenze</b><br>
+Ex chef convertito al codice · Rimini → Firenze</p>
+
+<p>
+<a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="30" alt="Email"/></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://profile.intra.42.fr/users/elmondo"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="30" alt="42 Intra"/></a>
+</p>
+
+</td>
+</tr>
+</table>
 
 ---
 
