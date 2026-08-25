@@ -56,11 +56,18 @@ Working in kitchens taught me precision, priority management under pressure and 
 
 ## 🚀 Common Core Projects
 
-**Networking & Systems**
+**Team Projects** — the largest projects in the curriculum, built collaboratively with fellow 42 students.
+
+| Project | Stack | Team | Description |
+|---|---|---|---|
+| [**ft_irc**](https://github.com/Elmond0/ft_irc) | C++ | [@K0ff33Blu3](https://github.com/K0ff33Blu3) · [@Gimasss](https://github.com/Gimasss) | Multi-client IRC server built on TCP sockets and non-blocking I/O with `poll()` |
+| [**minishell**](https://github.com/K0ff33Blu3/minishell) | C | [@K0ff33Blu3](https://github.com/K0ff33Blu3) | Working Unix shell: lexing and parsing, pipes, redirections, environment variables and built-ins |
+| [**cub3D**](https://github.com/K0ff33Blu3/cub3D) | C / MiniLibX | [@K0ff33Blu3](https://github.com/K0ff33Blu3) | 3D maze renderer built with raycasting, in the style of Wolfenstein 3D |
+
+**Systems & Concurrency**
 
 | Project | Stack | Description |
 |---|---|---|
-| [**ft_irc**](https://github.com/Elmond0/ft_irc) | C++ | Multi-client IRC server built on TCP sockets and non-blocking I/O with `poll()` |
 | [**philo**](https://github.com/Elmond0/philo) | C / POSIX | Dining philosophers: threads, mutexes, deadlock and race condition handling |
 | [**minitalk**](https://github.com/Elmond0/minitalk) | C | Inter-process communication via UNIX signals |
 
@@ -79,15 +86,6 @@ Working in kitchens taught me precision, priority management under pressure and 
 | [**ft_printf**](https://github.com/Elmond0/ft_printf) | C | Reimplementation of `printf` using variadic arguments |
 | [**get_next_line**](https://github.com/Elmond0/get_next_line) | C | Reading a file descriptor line by line using a static buffer |
 
-**Team Projects**
-
-Built as a two-person team with [**@K0ff33Blu3**](https://github.com/K0ff33Blu3), following the 42 pair-project format.
-
-| Project | Stack | Description |
-|---|---|---|
-| [**minishell**](https://github.com/K0ff33Blu3/minishell) | C | Working Unix shell: lexing and parsing, pipes, redirections, environment variables and built-ins |
-| [**cub3D**](https://github.com/K0ff33Blu3/cub3D) | C / MiniLibX | 3D maze renderer built with raycasting, in the style of Wolfenstein 3D |
-
 > 🔒 **Born2beroot** and **NetPractice** are complete but not published yet.
 
 ---
@@ -96,8 +94,8 @@ Built as a two-person team with [**@K0ff33Blu3**](https://github.com/K0ff33Blu3)
 
 | | |
 |---|---|
-| **42 Firenze** | Common Core — in progress (since 2024) · [intra profile](https://profile.intra.42.fr/users/elmondo) |
-| **Catering & Hospitality Diploma** | I.P.S.S.A.R. Tonino Guerra, Cervia — 2007–2012 |
+| **42 Firenze** | Common Core — in progress · [intra profile](https://profile.intra.42.fr/users/elmondo) |
+| **Catering & Hospitality Diploma** | I.P.S.S.A.R. Tonino Guerra, Cervia |
 
 ---
 
