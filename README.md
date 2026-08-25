@@ -1,21 +1,14 @@
 <h1>Hi, I'm Elia 👋</h1>
 
-<img align="left" width="390" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42.svg" alt="42 cursus badge"/>
-
 <b>Software Developer in Training @ 42 Firenze</b><br/>
 Former chef turned developer · Rimini → Florence
 
-<p>
-<a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="28" alt="Email"/></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://profile.intra.42.fr/users/elmondo"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="28" alt="42 Intra"/></a>
-</p>
-
-<br clear="left"/>
 
 ---
 
 ## 🧑‍💻 About Me
+
+<img align="left" width="390" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42.svg" alt="42 cursus badge"/>
 
 An unconventional path: years spent in high-pressure professional kitchens in **Italy** and **England**, followed by a complete career change into IT. Today I study at **42 Firenze**, a tuition-free peer-to-peer coding school, where I work on real C and C++ projects every day.
 
@@ -25,6 +18,14 @@ Working in kitchens taught me precision, managing priorities under pressure and 
 - 🌱 Learning: **networking, AI agents & LLM tooling, advanced C++**
 - 🎯 Goal: first role as a **systems / backend developer**
 - 🌍 Languages: Italian (native) · English (fluent) · Spanish (fluent) · French (basic)
+
+<p>
+<a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="28" alt="Email"/></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://profile.intra.42.fr/users/elmondo"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="28" alt="42 Intra"/></a>
+</p>
+
+<br clear="left"/>
 
 ---
 
