@@ -74,7 +74,11 @@ La cucina mi ha insegnato precisione, priorità sotto pressione e lavoro di squa
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Elmond0/Elmond0/output/github-contribution-grid-snake.svg">
 </picture>
 
-[![Streak](https://streak-stats.demolab.com/?user=Elmond0&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&background=00000000&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF)](https://github.com/Elmond0)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/streak-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/streak-light.svg">
+  <img alt="GitHub streak stats" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/streak-light.svg">
+</picture>
 
 </div>
 
