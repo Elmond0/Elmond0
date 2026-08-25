@@ -95,6 +95,23 @@ La cucina mi ha insegnato precisione, priorità sotto pressione e lavoro di squa
 
 ---
 
+## 🎓 Formazione
+
+| | |
+|---|---|
+| **42 Firenze** | Common Core — in corso (dal 2024) · [profilo intra](https://profile.intra.42.fr/users/elmondo) |
+| **Diploma Alberghiero** | I.P.S.S.A.R. Tonino Guerra, Cervia — 2007/2012 |
+
+---
+
+<div align="center">
+
+📫 **emondo1993@gmail.com** · Aperto a opportunità junior nel settore IT
+
+</div>
+
+---
+
 ## 📊 GitHub Activity
 
 <div align="center">
@@ -110,22 +127,5 @@ La cucina mi ha insegnato precisione, priorità sotto pressione e lavoro di squa
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/streak-light.svg">
   <img alt="GitHub streak stats" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/streak-light.svg">
 </picture>
-
-</div>
-
----
-
-## 🎓 Formazione
-
-| | |
-|---|---|
-| **42 Firenze** | Common Core — in corso (dal 2024) · [profilo intra](https://profile.intra.42.fr/users/elmondo) |
-| **Diploma Alberghiero** | I.P.S.S.A.R. Tonino Guerra, Cervia — 2007/2012 |
-
----
-
-<div align="center">
-
-📫 **emondo1993@gmail.com** · Aperto a opportunità junior nel settore IT
 
 </div>
