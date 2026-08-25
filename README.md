@@ -6,7 +6,15 @@
 
 <a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="30" alt="Email"/></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://42firenze.it"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="30" alt="42 Firenze"/></a>
+<a href="https://profile.intra.42.fr/users/elmondo"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="30" alt="42 Intra"/></a>
+
+<br><br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://badge.mediaplus.ma/darkblue/elmondo">
+  <source media="(prefers-color-scheme: light)" srcset="https://badge.mediaplus.ma/light/elmondo">
+  <img src="https://badge.mediaplus.ma/darkblue/elmondo" height="150" alt="42 cursus badge"/>
+</picture>
 
 </div>
 
@@ -45,22 +53,37 @@ La cucina mi ha insegnato precisione, priorità sotto pressione e lavoro di squa
 
 **Concetti chiave**
 
-`Programmazione di sistema` `Socket & TCP/IP` `Concorrenza & POSIX Threads` `OOP & STL` `Algoritmi & strutture dati` `Sicurezza server (LVM, UFW, SSH)`
+`Programmazione di sistema` `Socket & TCP/IP` `I/O non-bloccante` `Concorrenza & POSIX Threads`
+`OOP & STL` `Gestione manuale della memoria` `Algoritmi & strutture dati` `Sicurezza server (LVM, UFW, SSH)`
 
 ---
 
-## 🚀 Progetti 42 Firenze
+## 🚀 Progetti Common Core
+
+**Networking & Sistema**
 
 | Progetto | Stack | Descrizione |
 |---|---|---|
-| [**minishell**](https://github.com/Elmond0/minishell) | C | Shell Unix funzionante: parsing, processi, pipe, redirect |
-| [**cub3D**](https://github.com/Elmond0/cub3D) | C | Motore 3D con raycasting stile Wolfenstein |
-| [**Philosophers**](https://github.com/Elmond0/philosophers) | C / POSIX | Simulazione concorrenza con thread e mutex |
+| [**ft_irc**](https://github.com/Elmond0/ft_irc) | C++ | Server IRC multi-client, socket TCP e I/O non-bloccante con `poll()` |
+| [**philo**](https://github.com/Elmond0/philo) | C / POSIX | Dining philosophers: thread, mutex, gestione di deadlock e race condition |
 | [**minitalk**](https://github.com/Elmond0/minitalk) | C | Comunicazione inter-processo via segnali UNIX |
-| [**ft_irc**](https://github.com/Elmond0/ft_irc) | C++ | Server IRC multi-client con I/O non-bloccante *(in corso)* |
-| [**push_swap**](https://github.com/Elmond0/push_swap) | C | Sorting ottimizzato su due stack |
-| [**Born2beroot**](https://github.com/Elmond0/born2beroot) | Debian | Server con LVM cifrato, UFW, SSH hardened |
-| [**NetPractice**](https://github.com/Elmond0/netpractice) | Networking | TCP/IP, subnetting, routing |
+
+**C++ & Programmazione a oggetti**
+
+| Progetto | Stack | Descrizione |
+|---|---|---|
+| [**CPP00 – CPP05**](https://github.com/Elmond0?tab=repositories&q=CPP) | C++ | Moduli OOP: classi, ereditarietà, polimorfismo, eccezioni, template |
+
+**Algoritmi & Fondamenta C**
+
+| Progetto | Stack | Descrizione |
+|---|---|---|
+| [**push_swap**](https://github.com/Elmond0/push_swap) | C | Sorting ottimizzato su due stack con numero minimo di mosse |
+| [**so_long**](https://github.com/Elmond0/so_long) | C / MiniLibX | Gioco 2D con gestione texture, eventi e mappa |
+| [**ft_printf**](https://github.com/Elmond0/ft_printf) | C | Reimplementazione di `printf` con argomenti variadici |
+| [**get_next_line**](https://github.com/Elmond0/get_next_line) | C | Lettura riga per riga da file descriptor con buffer statico |
+
+> 🔒 **minishell**, **cub3D**, **Born2beroot** e **NetPractice** sono completati ma non ancora pubblicati.
 
 ---
 
@@ -88,8 +111,8 @@ La cucina mi ha insegnato precisione, priorità sotto pressione e lavoro di squa
 
 | | |
 |---|---|
-| **42 Firenze** | Common Core — in corso |
-| **Diploma Alberghiero** | I.P.S.S.A.R. Tonino Guerra, Cervia |
+| **42 Firenze** | Common Core — in corso (dal 2024) · [profilo intra](https://profile.intra.42.fr/users/elmondo) |
+| **Diploma Alberghiero** | I.P.S.S.A.R. Tonino Guerra, Cervia — 2007/2012 |
 
 ---
 
