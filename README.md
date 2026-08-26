@@ -7,7 +7,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg">
-  <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg" alt="Software Developer in Training @ 42 Firenze — Professional chef turned developer · Rimini → Florence"/>
+  <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg" alt="Software Developer in Training @ 42 Firenze — Professional chef turned developer"/>
 </picture>
 
 ---
