@@ -7,7 +7,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg">
-  <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg" alt="Software Developer in Training @ 42 Firenze — Professional Chef turned developer · Rimini → Florence"/>
+  <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg" alt="Software Developer in Training @ 42 Firenze — Professional chef turned developer · Rimini → Florence"/>
 </picture>
 
 ---
@@ -59,7 +59,7 @@ Working in kitchens taught me precision, priority management under pressure and 
 
 ---
 
-## <a href="https://profile.intra.42.fr/users/elmondo"><img align="middle" height="26" src="https://cdn.simpleicons.org/42/000000/FFFFFF" alt="42"/></a> Common Core Projects
+## <a href="https://profile.intra.42.fr/users/elmondo"><img height="30" src="https://cdn.simpleicons.org/42/000000/FFFFFF" alt="42"/></a> &nbsp;Common Core Projects
 
 <table width="100%">
 <thead>

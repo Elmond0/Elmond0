@@ -28,7 +28,7 @@ jobs:
         env:
           BASE: https://readme-typing-svg.demolab.com
           NAME: Elia+Mondo
-          TAGLINE: Software+Developer+in+Training+%40+42+Firenze;Former+chef+turned+developer+%C2%B7+Rimini+%E2%86%92+Florence
+          TAGLINE: Software+Developer+in+Training+%40+42+Firenze;Professional+chef+turned+developer+%C2%B7+Rimini+%E2%86%92+Florence
         run: |
           set -euo pipefail
           mkdir -p profile
@@ -58,9 +58,9 @@ jobs:
             "$BASE/?font=Fira+Code&weight=600&size=40&duration=2500&color=0366D6&vCenter=true&repeat=false&width=264&height=60&lines=$NAME"
 
           fetch profile/tagline-dark.svg \
-            "$BASE/?font=Fira+Code&size=20&duration=3500&pause=1200&color=C9D1D9&vCenter=true&width=620&height=45&lines=$TAGLINE"
+            "$BASE/?font=Fira+Code&size=20&duration=3500&pause=1200&color=C9D1D9&vCenter=true&width=660&height=45&lines=$TAGLINE"
           fetch profile/tagline-light.svg \
-            "$BASE/?font=Fira+Code&size=20&duration=3500&pause=1200&color=24292F&vCenter=true&width=620&height=45&lines=$TAGLINE"
+            "$BASE/?font=Fira+Code&size=20&duration=3500&pause=1200&color=24292F&vCenter=true&width=660&height=45&lines=$TAGLINE"
 
       - name: Commit banners
         run: |
