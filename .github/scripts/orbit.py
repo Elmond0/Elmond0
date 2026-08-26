@@ -27,7 +27,7 @@ from collections import Counter
 
 USER = os.environ.get("GH_USER", "Elmond0")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
-OUT = os.environ.get("ORBIT_OUT", "profile/orbit.svg")
+OUT = os.environ.get("ORBIT_OUT", "profile/languages-orbit.svg")
 
 DEVICON = "https://raw.githubusercontent.com/devicons/devicon/master/icons"
 # Make non esiste in devicon. La voce "Make" di simple-icons NON va usata:
