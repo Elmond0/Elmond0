@@ -27,7 +27,7 @@ from collections import Counter
 
 USER = os.environ.get("GH_USER", "Elmond0")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
-OUT = os.environ.get("ORBIT_OUT", "profile/languages-orbit.svg")
+OUT = os.environ.get("ORBIT_OUT", "profile/languages-orbit-v2.svg")
 
 DEVICON = "https://raw.githubusercontent.com/devicons/devicon/master/icons"
 # Make non esiste in devicon. La voce "Make" di simple-icons NON va usata:
@@ -69,24 +69,24 @@ COLORS = {
 FALLBACK_COLOR = "#58a6ff"
 
 MAX_PLANETS = 4
-W, H = 400, 176
-CX, CY = 200, 80
+W, H = 400, 138
+CX, CY = 200, 62
 
 # Raggio del sole. Ogni orbita deve avere semiasse verticale MINORE di questo,
 # altrimenti il pianeta al culmine passa sopra il bordo del sole invece che
 # dietro, e l'occlusione non si vede: e' il motivo per cui le ellissi sono
 # molto schiacciate (vista molto inclinata sul piano orbitale).
-SUN_R = 64
+SUN_R = 52
 # Quanto e' schiacciata l'ellisse: 1.0 sarebbe la vista perpendicolare al
 # piano orbitale (cerchio perfetto), 0 la vista di taglio. Il tetto e' dato
 # dall'occlusione -- con sole 64 e orbita esterna 168 il massimo e' 0.30,
 # oltre il quale il pianeta al culmine esce dal disco e non sparisce piu'.
-FLATTEN = 0.29
+FLATTEN = 0.26
 
 # Semiasse orizzontale della prima e dell'ultima orbita. Il minimo tiene il
 # pianeta fuori dal sole quando e' di profilo, il massimo lascia spazio
 # all'icona perche' non venga tagliata dal bordo del disegno.
-RX_MIN, RX_MAX = 88, 168
+RX_MIN, RX_MAX = 76, 138
 
 
 def get(url, raw=False, attempts=6):
@@ -257,15 +257,15 @@ def build(totals):
     <!-- Il disco deve essere OPACO: con stop-opacity < 1 il pianeta che gli
          passa dietro si vede in trasparenza e sembra passargli davanti. -->
     <radialGradient id="core" cx="38%" cy="32%" r="78%">
-      <stop offset="0%" stop-color="#fffbe0"/>
-      <stop offset="35%" stop-color="#ffd93d"/>
-      <stop offset="72%" stop-color="#fbaf00"/>
-      <stop offset="100%" stop-color="#e07a05"/>
+      <stop offset="0%" stop-color="#ffbe5c"/>
+      <stop offset="40%" stop-color="#f99a1c"/>
+      <stop offset="76%" stop-color="#ed7a0e"/>
+      <stop offset="100%" stop-color="#cf5e08"/>
     </radialGradient>
     <!-- L'alone resta translucido, ma sta sotto ai pianeti. -->
     <radialGradient id="halo">
-      <stop offset="50%" stop-color="#ffc61a" stop-opacity="0.32"/>
-      <stop offset="100%" stop-color="#ffc61a" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#ffa733" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ffa733" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <style>
@@ -277,7 +277,7 @@ def build(totals):
       .pct {{ fill: #8b949e; }}
     }}
   </style>
-  <circle cx="{CX}" cy="{CY}" r="{SUN_R * 2}" fill="url(#halo)"/>
+  <circle cx="{CX}" cy="{CY}" r="{SUN_R * 1.55}" fill="url(#halo)"/>
   {nl.join(orbits)}
   {nl.join(behind)}
   <circle cx="{CX}" cy="{CY}" r="{SUN_R}" fill="url(#core)"/>
