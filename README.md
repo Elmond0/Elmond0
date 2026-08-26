@@ -1,20 +1,18 @@
+<p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/name-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/name-light.svg">
-  <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/name-light.svg" alt="Elia Mondo"/>
+  <img align="middle" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/name-light.svg" alt="Elia Mondo"/>
 </picture>
+&nbsp;
+<a href="https://profile.intra.42.fr/users/elmondo"><img align="middle" height="44" src="https://cdn.simpleicons.org/42/000000/FFFFFF" alt="42 Firenze — intra profile"/></a>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg">
-  <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg" alt="Software Developer in Training @ 42 Firenze — Former chef turned developer · Rimini → Florence"/>
+  <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg" alt="Software Developer in Training @ 42 Firenze — Professional Chef turned developer · Rimini → Florence"/>
 </picture>
-
-<p>
-<a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="28" alt="Email"/></a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://profile.intra.42.fr/users/elmondo"><img src="https://cdn.simpleicons.org/42/000000/FFFFFF" height="28" alt="42 Intra"/></a>
-</p>
 
 ---
 
@@ -107,7 +105,7 @@ Working in kitchens taught me precision, priority management under pressure and 
 
 <div align="center">
 
-📫 **emondo1993@gmail.com** · Open to junior opportunities in IT
+<a href="mailto:emondo1993@gmail.com"><img align="middle" height="20" src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email"/></a> &nbsp;**emondo1993@gmail.com** · Open to junior opportunities in IT
 
 </div>
 
