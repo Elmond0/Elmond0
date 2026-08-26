@@ -59,7 +59,7 @@ Working in kitchens taught me precision, priority management under pressure and 
 
 ---
 
-## <a href="https://profile.intra.42.fr/users/elmondo"><img align="middle" height="38" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/icon42.svg" alt="42"/></a> &nbsp;Common Core Projects
+## <a href="https://profile.intra.42.fr/users/elmondo"><img align="middle" height="42" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/icon42.svg" alt="42"/></a> &nbsp;Common Core Projects
 
 <table width="100%">
 <thead>
