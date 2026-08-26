@@ -19,6 +19,9 @@ dei path nello stesso documento lo sono sempre.
 import json
 import os
 import re
+import sys
+import time
+import urllib.error
 import urllib.request
 from collections import Counter
 
@@ -64,12 +67,37 @@ W, H = 400, 300
 CX, CY = 200, 150
 
 
-def get(url, raw=False):
-    req = urllib.request.Request(url, headers={"User-Agent": "orbit"})
-    if TOKEN and "api.github.com" in url:
-        req.add_header("Authorization", f"Bearer {TOKEN}")
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read() if raw else json.load(r)
+def get(url, raw=False, attempts=6):
+    """GET con backoff. Sul 403 da rate limit aspetta fino all'orario di
+    reset dichiarato dall'header, invece di rinunciare: un errore transitorio
+    non deve far saltare l'intero grafico."""
+    last = None
+    for i in range(attempts):
+        req = urllib.request.Request(url, headers={"User-Agent": "orbit"})
+        if TOKEN and "api.github.com" in url:
+            req.add_header("Authorization", f"Bearer {TOKEN}")
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read() if raw else json.load(r)
+        except urllib.error.HTTPError as exc:
+            last = exc
+            if exc.code in (403, 429):
+                reset = exc.headers.get("x-ratelimit-reset")
+                wait = 2 ** i
+                if reset:
+                    wait = max(0, int(reset) - int(time.time())) + 2
+                wait = min(wait, 300)
+                print(f"  {exc.code} su {url} -> attendo {wait}s", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            if 500 <= exc.code < 600:
+                time.sleep(2 ** i)
+                continue
+            raise
+        except Exception as exc:
+            last = exc
+            time.sleep(2 ** i)
+    raise last
 
 
 def collect():
