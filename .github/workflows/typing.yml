@@ -1,0 +1,67 @@
+name: Generate Typing Banners
+
+on:
+  schedule:
+    - cron: "0 8 * * 0"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/typing.yml"
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # readme-typing-svg gira su un dyno Heroku: da freddo il proxy camo di
+      # GitHub va in timeout e l'immagine appare rotta. Scarichiamo l'SVG qui
+      # (font incluso in base64, quindi e' autosufficiente) e lo serviamo da
+      # raw.githubusercontent.com.
+      - name: Fetch typing banners
+        env:
+          BASE: https://readme-typing-svg.demolab.com
+          NAME: Elia+Mondo
+          TAGLINE: Software+Developer+in+Training+%40+42+Firenze;Former+chef+turned+developer+%C2%B7+Rimini+%E2%86%92+Florence
+        run: |
+          set -euo pipefail
+          mkdir -p profile
+
+          fetch() {
+            local out=$1 url=$2
+            for attempt in 1 2 3 4 5; do
+              if curl -sf --max-time 30 "$url" -o "$out" && grep -q '</svg>' "$out"; then
+                echo "ok $out ($(stat -c%s "$out") bytes)"
+                return 0
+              fi
+              echo "retry $attempt for $out"
+              sleep 10
+            done
+            echo "impossibile scaricare $out" >&2
+            return 1
+          }
+
+          fetch profile/name-dark.svg \
+            "$BASE/?font=Fira+Code&weight=600&size=40&duration=2500&pause=99999&color=58A6FF&vCenter=true&repeat=false&width=420&height=60&lines=$NAME"
+          fetch profile/name-light.svg \
+            "$BASE/?font=Fira+Code&weight=600&size=40&duration=2500&pause=99999&color=0366D6&vCenter=true&repeat=false&width=420&height=60&lines=$NAME"
+
+          fetch profile/tagline-dark.svg \
+            "$BASE/?font=Fira+Code&size=20&duration=3500&pause=1200&color=C9D1D9&vCenter=true&width=620&height=45&lines=$TAGLINE"
+          fetch profile/tagline-light.svg \
+            "$BASE/?font=Fira+Code&size=20&duration=3500&pause=1200&color=24292F&vCenter=true&width=620&height=45&lines=$TAGLINE"
+
+      - name: Commit banners
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/name-dark.svg profile/name-light.svg \
+                  profile/tagline-dark.svg profile/tagline-light.svg
+          git commit -m "chore: update typing banners" || exit 0
+          git push

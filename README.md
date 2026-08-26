@@ -1,7 +1,14 @@
-<h1>Hi, I'm Elia 👋</h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/name-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/name-light.svg">
+  <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/name-light.svg" alt="Elia Mondo"/>
+</picture>
 
-<b>Software Developer in Training @ 42 Firenze</b><br/>
-Former chef turned developer · Rimini → Florence
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg">
+  <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg" alt="Software Developer in Training @ 42 Firenze — Former chef turned developer · Rimini → Florence"/>
+</picture>
 
 <p>
 <a href="mailto:emondo1993@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" height="28" alt="Email"/></a>
