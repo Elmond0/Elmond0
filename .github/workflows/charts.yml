@@ -1,4 +1,7 @@
-name: Generate Language Chart
+# Sostituisce languages.yml: quel workflow si era piantato su startup_failure
+# ripetuti, con un file che actionlint validava come corretto e identico a uno
+# che prima girava. Ricrearlo sotto un nome nuovo e' il modo per sbloccarlo.
+name: Generate Charts
 
 on:
   schedule:
@@ -8,7 +11,7 @@ on:
     branches:
       - main
     paths:
-      - ".github/workflows/languages.yml"
+      - ".github/workflows/charts.yml"
       - ".github/scripts/langchart.py"
       - ".github/scripts/orbit.py"
 

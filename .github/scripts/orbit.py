@@ -69,19 +69,24 @@ COLORS = {
 FALLBACK_COLOR = "#58a6ff"
 
 MAX_PLANETS = 4
-W, H = 400, 260
-CX, CY = 200, 130
+W, H = 400, 176
+CX, CY = 200, 80
 
 # Raggio del sole. Ogni orbita deve avere semiasse verticale MINORE di questo,
 # altrimenti il pianeta al culmine passa sopra il bordo del sole invece che
 # dietro, e l'occlusione non si vede: e' il motivo per cui le ellissi sono
 # molto schiacciate (vista molto inclinata sul piano orbitale).
-SUN_R = 38
-FLATTEN = 0.20
+SUN_R = 64
+# Quanto e' schiacciata l'ellisse: 1.0 sarebbe la vista perpendicolare al
+# piano orbitale (cerchio perfetto), 0 la vista di taglio. Il tetto e' dato
+# dall'occlusione -- con sole 64 e orbita esterna 168 il massimo e' 0.30,
+# oltre il quale il pianeta al culmine esce dal disco e non sparisce piu'.
+FLATTEN = 0.29
 
-# Aspetto dei pianeti nel semigiro dietro al sole.
-BACK_DIM = 0.45
-BACK_SCALE = 0.82
+# Semiasse orizzontale della prima e dell'ultima orbita. Il minimo tiene il
+# pianeta fuori dal sole quando e' di profilo, il massimo lascia spazio
+# all'icona perche' non venga tagliata dal bordo del disegno.
+RX_MIN, RX_MAX = 88, 168
 
 
 def get(url, raw=False, attempts=6):
@@ -202,7 +207,9 @@ def build(totals):
     for i, (lang, size) in enumerate(planets):
         share = size / total
         color = COLORS.get(lang, FALLBACK_COLOR)
-        rx = 70 + i * 36
+        n = len(planets)
+        rx = RX_MIN if n == 1 else RX_MIN + i * (RX_MAX - RX_MIN) / (n - 1)
+        rx = round(rx)
         ry = round(rx * FLATTEN, 1)
         # Il piu' usato sta piu' vicino al nucleo e gira piu' in fretta.
         dur = 16 + i * 7
@@ -232,24 +239,33 @@ def build(totals):
         # e a turno si accendono. L'arco parte da ore 3 e gira in senso
         # orario: la prima meta' del ciclo e' il semigiro basso (davanti),
         # la seconda e' quello alto (dietro).
+        #
+        # Le due copie sono identiche, senza attenuazione: l'icona resta
+        # sempre alla stessa luminosita' e semplicemente scompare quando il
+        # disco opaco del sole le passa davanti.
         def fade(values):
             return (f'<animate attributeName="opacity" dur="{dur}s" '
                     f'repeatCount="indefinite" begin="{begin}" '
                     f'calcMode="discrete" values="{values}" keyTimes="0;0.5"/>')
 
         front.append(f'<g>{motion}{fade("1;0")}{mark}{label}</g>')
-        behind.append(
-            f'<g opacity="0">{motion}{fade(f"0;{BACK_DIM}")}'
-            f'<g transform="scale({BACK_SCALE})">{mark}{label}</g></g>'
-        )
+        behind.append(f'<g opacity="0">{motion}{fade("0;1")}{mark}{label}</g>')
 
     nl = "\n  "
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Linguaggi in orbita: {esc(', '.join(f'{l} {s / total * 100:.1f}%' for l, s in planets))}">
   <defs>
-    <radialGradient id="core">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.95"/>
-      <stop offset="60%" stop-color="#1f6feb" stop-opacity="0.75"/>
-      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0.15"/>
+    <!-- Il disco deve essere OPACO: con stop-opacity < 1 il pianeta che gli
+         passa dietro si vede in trasparenza e sembra passargli davanti. -->
+    <radialGradient id="core" cx="38%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#fffbe0"/>
+      <stop offset="35%" stop-color="#ffd93d"/>
+      <stop offset="72%" stop-color="#fbaf00"/>
+      <stop offset="100%" stop-color="#e07a05"/>
+    </radialGradient>
+    <!-- L'alone resta translucido, ma sta sotto ai pianeti. -->
+    <radialGradient id="halo">
+      <stop offset="50%" stop-color="#ffc61a" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#ffc61a" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <style>
@@ -261,17 +277,34 @@ def build(totals):
       .pct {{ fill: #8b949e; }}
     }}
   </style>
+  <circle cx="{CX}" cy="{CY}" r="{SUN_R * 2}" fill="url(#halo)"/>
   {nl.join(orbits)}
   {nl.join(behind)}
   <circle cx="{CX}" cy="{CY}" r="{SUN_R}" fill="url(#core)"/>
-  <circle cx="{CX}" cy="{CY}" r="{SUN_R}" fill="none" stroke="#58a6ff" stroke-opacity="0.5"/>
   {nl.join(front)}
 </svg>
 """
 
 
 def main():
-    svg = build(collect())
+    # ORBIT_CACHE serve solo allo sviluppo locale: le API senza token danno
+    # 60 chiamate l'ora e ogni giro ne consuma una per repo, quindi ritoccare
+    # la grafica diventa impossibile. La Action non imposta questa variabile
+    # e quindi rilegge sempre i dati veri.
+    cache = os.environ.get("ORBIT_CACHE", "")
+    totals = None
+    if cache and os.path.exists(cache):
+        with open(cache, encoding="utf-8") as f:
+            totals = Counter(json.load(f))
+        print(f"dati dalla cache {cache}")
+    if totals is None:
+        totals = collect()
+        if cache:
+            with open(cache, "w", encoding="utf-8") as f:
+                json.dump(dict(totals), f)
+            print(f"dati salvati in {cache}")
+
+    svg = build(totals)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(svg)
