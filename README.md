@@ -58,6 +58,7 @@ Working in kitchens taught me precision, priority management under pressure and 
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg" alt="Debian"/>&nbsp;&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" alt="Windows"/>&nbsp;&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"/>&nbsp;&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/material-extensions/vscode-material-icon-theme@main/icons/makefile.svg" alt="Make"/>&nbsp;&nbsp;&nbsp;
 <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code"/>
 </p>
 

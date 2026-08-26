@@ -30,22 +30,28 @@ TOKEN = os.environ.get("GITHUB_TOKEN", "")
 OUT = os.environ.get("ORBIT_OUT", "profile/orbit.svg")
 
 DEVICON = "https://raw.githubusercontent.com/devicons/devicon/master/icons"
+# Make non esiste in devicon. La voce "Make" di simple-icons NON va usata:
+# la sua fonte e' make.com/press, cioe' la piattaforma di automazione, non
+# GNU Make (stesso equivoco del logo CMake). Si usa l'icona makefile di
+# material-icon-theme (MIT), che raffigura un terminale con ingranaggio.
+MATERIAL = "https://raw.githubusercontent.com/material-extensions/vscode-material-icon-theme/main/icons"
 
-# Linguaggio GitHub -> cartella/variante devicon. I linguaggi assenti da
-# questa mappa ricadono sul cerchio colorato con l'iniziale.
+# Linguaggio GitHub -> URL dell'icona. I linguaggi assenti da questa mappa
+# ricadono sul cerchio colorato con l'iniziale.
 ICONS = {
-    "C": "c/c-original",
-    "C++": "cplusplus/cplusplus-original",
-    "Shell": "bash/bash-original",
-    "Python": "python/python-original",
-    "HTML": "html5/html5-original",
-    "CSS": "css3/css3-original",
-    "JavaScript": "javascript/javascript-original",
-    "TypeScript": "typescript/typescript-original",
-    "Dockerfile": "docker/docker-original",
-    "Rust": "rust/rust-original",
-    "Go": "go/go-original",
-    "Java": "java/java-original",
+    "C": f"{DEVICON}/c/c-original.svg",
+    "C++": f"{DEVICON}/cplusplus/cplusplus-original.svg",
+    "Makefile": f"{MATERIAL}/makefile.svg",
+    "Shell": f"{DEVICON}/bash/bash-original.svg",
+    "Python": f"{DEVICON}/python/python-original.svg",
+    "HTML": f"{DEVICON}/html5/html5-original.svg",
+    "CSS": f"{DEVICON}/css3/css3-original.svg",
+    "JavaScript": f"{DEVICON}/javascript/javascript-original.svg",
+    "TypeScript": f"{DEVICON}/typescript/typescript-original.svg",
+    "Dockerfile": f"{DEVICON}/docker/docker-original.svg",
+    "Rust": f"{DEVICON}/rust/rust-original.svg",
+    "Go": f"{DEVICON}/go/go-original.svg",
+    "Java": f"{DEVICON}/java/java-original.svg",
 }
 
 # Colori ufficiali linguist, usati per il fallback e per le scie orbitali.
@@ -136,11 +142,11 @@ def collect():
 def icon_inline(lang, r):
     """Restituisce l'icona devicon come gruppo di path, centrata su (0,0)
     e riscalata a 2r pixel. None se il linguaggio non ha un'icona."""
-    path = ICONS.get(lang)
-    if not path:
+    url = ICONS.get(lang)
+    if not url:
         return None
     try:
-        svg = get(f"{DEVICON}/{path}.svg", raw=True).decode("utf-8")
+        svg = get(url, raw=True).decode("utf-8")
     except Exception:
         return None
 
