@@ -1,14 +1,20 @@
+<!-- I <picture> sono inline: senza <p> attorno i due banner stanno sulla stessa
+     riga se ci entrano (264px + 525px), e la tagline finisce di fianco al nome. -->
+<p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/name-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/name-light.svg">
   <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/name-light.svg" alt="Elia Mondo"/>
 </picture>
+</p>
 
+<p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg">
   <img src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/tagline-light.svg" alt="Software Developer in Training @ 42 Firenze — Professional chef turned developer"/>
 </picture>
+</p>
 
 ---
 
