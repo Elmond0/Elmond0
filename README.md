@@ -60,18 +60,25 @@ Working in kitchens taught me precision, priority management under pressure and 
 
 ## 🚀 Common Core Projects
 
+**Team Projects**
+
 | Project | Stack | Team | Description |
 |---|---|---|---|
 | [**ft_irc**](https://github.com/Elmond0/ft_irc) | C++ | [@K0ff33Blu3](https://github.com/K0ff33Blu3) · [@Gimasss](https://github.com/Gimasss) | Multi-client IRC server built on TCP sockets and non-blocking I/O with `poll()` |
-| [**minishell**](https://github.com/K0ff33Blu3/minishell) | C | [@K0ff33Blu3](https://github.com/K0ff33Blu3) | Working Unix shell: lexing and parsing, pipes, redirections, environment variables and built-ins |
-| [**cub3D**](https://github.com/K0ff33Blu3/cub3D) | C / MiniLibX | [@K0ff33Blu3](https://github.com/K0ff33Blu3) | 3D maze renderer built with raycasting, in the style of Wolfenstein 3D |
-| [**philo**](https://github.com/Elmond0/philo) | C / POSIX | — | Dining philosophers: threads, mutexes, deadlock and race condition handling |
-| [**minitalk**](https://github.com/Elmond0/minitalk) | C | — | Inter-process communication via UNIX signals |
-| [**CPP00 – CPP05**](https://github.com/Elmond0?tab=repositories&q=CPP) | C++ | — | OOP modules: classes, inheritance, polymorphism, exceptions, templates |
-| [**push_swap**](https://github.com/Elmond0/push_swap) | C | — | Sorting algorithm on two stacks, optimized for the fewest possible moves |
-| [**so_long**](https://github.com/Elmond0/so_long) | C / MiniLibX | — | 2D game handling textures, events and map parsing |
-| [**ft_printf**](https://github.com/Elmond0/ft_printf) | C | — | Reimplementation of `printf` using variadic arguments |
-| [**get_next_line**](https://github.com/Elmond0/get_next_line) | C | — | Reading a file descriptor line by line using a static buffer |
+| [**minishell**](https://github.com/K0ff33Blu3/minishell) | C | [@K0ff33Blu3](https://github.com/K0ff33Blu3) | Working Unix shell: lexing, parsing, pipes, redirections, environment variables and built-ins |
+| [**cub3D**](https://github.com/K0ff33Blu3/cub3D) | C / MiniLibX | [@K0ff33Blu3](https://github.com/K0ff33Blu3) | 3D maze renderer built with raycasting, inspired by Wolfenstein 3D |
+
+**Solo Projects**
+
+| Project | Stack | Description |
+|---|---|---|
+| [**philo**](https://github.com/Elmond0/philo) | C / POSIX | Dining philosophers problem with POSIX threads and mutexes; handles deadlock prevention, race conditions and precise timing |
+| [**minitalk**](https://github.com/Elmond0/minitalk) | C | Bidirectional inter-process communication via UNIX signals (SIGUSR1/SIGUSR2) with an acknowledgment protocol |
+| [**CPP00 – CPP05**](https://github.com/Elmond0?tab=repositories&q=CPP) | C++ | Six OOP modules covering classes, memory management, inheritance, polymorphism, exceptions and templates |
+| [**push_swap**](https://github.com/Elmond0/push_swap) | C | Sorting algorithm on two stacks using a custom strategy optimized to minimize the total number of moves |
+| [**so_long**](https://github.com/Elmond0/so_long) | C / MiniLibX | 2D top-down game with texture loading, event-driven input handling and `.ber` map parsing |
+| [**ft_printf**](https://github.com/Elmond0/ft_printf) | C | Reimplementation of the C standard `printf` using variadic arguments, supporting all main format specifiers |
+| [**get_next_line**](https://github.com/Elmond0/get_next_line) | C | Line-by-line file descriptor reader using a static buffer; handles multiple simultaneous fds and any buffer size |
 
 > 🔒 **Born2beroot** and **NetPractice** are complete but not published yet.
 
