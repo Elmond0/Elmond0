@@ -42,24 +42,29 @@ Working in kitchens taught me precision, priority management under pressure and 
 
 **Programming Languages**
 
-![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+<p>
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C"/>&nbsp;&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++"/>&nbsp;&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="Bash"/>&nbsp;&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"/>&nbsp;&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"/>
+</p>
 
 **Systems & Tools**
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Make](https://img.shields.io/badge/Make-064F8C?style=flat&logo=cmake&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
+<p>
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux"/>&nbsp;&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg" alt="Ubuntu"/>&nbsp;&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg" alt="Debian"/>&nbsp;&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" alt="Windows"/>&nbsp;&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"/>&nbsp;&nbsp;&nbsp;
+<img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code"/>
+</p>
 
 **Core Concepts**
 
 `Systems programming` `Sockets & TCP/IP` `Non-blocking I/O` `Concurrency & POSIX threads`
-`OOP & STL` `Manual memory management` `Algorithms & data structures` `Server hardening (LVM, UFW, SSH)`
+`OOP & STL` `Manual memory management` `Algorithms & data structures` `Makefiles & build automation` `Server hardening (LVM, UFW, SSH)`
 
 <br clear="right"/>
 
