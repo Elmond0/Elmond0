@@ -27,7 +27,7 @@ from collections import Counter
 
 USER = os.environ.get("GH_USER", "Elmond0")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
-OUT = os.environ.get("ORBIT_OUT", "profile/languages-orbit-v3.svg")
+OUT = os.environ.get("ORBIT_OUT", "profile/languages-orbit-v4.svg")
 
 DEVICON = "https://raw.githubusercontent.com/devicons/devicon/master/icons"
 # Make non esiste in devicon. La voce "Make" di simple-icons NON va usata:
@@ -86,7 +86,7 @@ FLATTEN = 0.26
 RX_MIN, RX_MAX = 80, 152
 
 R_ICON_MAX = 16     # raggio dell'icona piu' grande
-LABEL_H = 16        # spazio sotto l'icona per la percentuale
+LABEL_H = 22        # spazio sotto l'icona per la pastiglia con la percentuale
 MARGIN = 8
 
 # Il canvas si RICAVA dalla geometria invece di essere fissato a mano: cosi'
@@ -243,8 +243,16 @@ def build(totals):
                     f'<text class="ini" y="4" text-anchor="middle">'
                     f'{esc(lang[0])}</text>')
 
-        label = (f'<text class="pct" y="{r_icon + 13}" text-anchor="middle">'
-                 f'{share * 100:.1f}%</text>')
+        # La percentuale passa sopra al sole nel semigiro davanti, dove un
+        # testo grigio sull'arancione e' illeggibile. Le si mette dietro una
+        # pastiglia del colore della pagina: sullo sfondo si confonde e non
+        # si nota, sul sole diventa un'etichetta ben staccata.
+        pct = f"{share * 100:.1f}%"
+        chip_w = round(6.3 * len(pct) + 12)
+        label = (f'<rect class="chip" x="{-chip_w / 2:.1f}" y="{r_icon + 3}" '
+                 f'width="{chip_w}" height="16" rx="8"/>'
+                 f'<text class="pct" y="{r_icon + 15}" text-anchor="middle">'
+                 f'{pct}</text>')
 
         motion = (f'<animateMotion dur="{dur}s" repeatCount="indefinite" '
                   f'begin="{begin}" path="{ellipse_path(rx, ry)}"/>')
@@ -286,11 +294,13 @@ def build(totals):
   </defs>
   <style>
     .orbit {{ fill: none; stroke: #d0d7de; stroke-width: 1; stroke-dasharray: 3 4; }}
-    .pct {{ font: 600 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #57606a; }}
+    .chip {{ fill: #ffffff; fill-opacity: 0.9; }}
+    .pct {{ font: 600 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #24292f; }}
     .ini {{ font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #ffffff; }}
     @media (prefers-color-scheme: dark) {{
       .orbit {{ stroke: #30363d; }}
-      .pct {{ fill: #8b949e; }}
+      .chip {{ fill: #0d1117; fill-opacity: 0.88; }}
+      .pct {{ fill: #e6edf3; }}
     }}
   </style>
   <circle cx="{CX}" cy="{CY}" r="{SUN_R * 1.55}" fill="url(#halo)"/>
