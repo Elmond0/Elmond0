@@ -40,14 +40,14 @@ jobs:
         env:
           GH_USER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ORBIT_OUT: profile/languages-orbit-v2.svg
+          ORBIT_OUT: profile/languages-orbit-v3.svg
         run: python3 .github/scripts/orbit.py
 
       - name: Commit charts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/languages.svg profile/languages-orbit-v2.svg
+          git add profile/languages.svg profile/languages-orbit-v3.svg
           git commit -m "chore: update language charts" || exit 0
           git pull --rebase --autostash
           git push

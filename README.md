@@ -38,7 +38,7 @@ Working in kitchens taught me precision, priority management under pressure and 
 
 ## 🛠️ Tech Stack
 
-<img align="right" width="400" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/languages-orbit-v2.svg" alt="Language distribution across my repositories"/>
+<img align="right" width="400" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/languages-orbit-v3.svg" alt="Language distribution across my repositories"/>
 
 **Programming Languages**
 

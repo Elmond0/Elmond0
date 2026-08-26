@@ -27,7 +27,7 @@ from collections import Counter
 
 USER = os.environ.get("GH_USER", "Elmond0")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
-OUT = os.environ.get("ORBIT_OUT", "profile/languages-orbit-v2.svg")
+OUT = os.environ.get("ORBIT_OUT", "profile/languages-orbit-v3.svg")
 
 DEVICON = "https://raw.githubusercontent.com/devicons/devicon/master/icons"
 # Make non esiste in devicon. La voce "Make" di simple-icons NON va usata:
@@ -69,24 +69,40 @@ COLORS = {
 FALLBACK_COLOR = "#58a6ff"
 
 MAX_PLANETS = 4
-W, H = 400, 138
-CX, CY = 200, 62
 
 # Raggio del sole. Ogni orbita deve avere semiasse verticale MINORE di questo,
 # altrimenti il pianeta al culmine passa sopra il bordo del sole invece che
-# dietro, e l'occlusione non si vede: e' il motivo per cui le ellissi sono
-# molto schiacciate (vista molto inclinata sul piano orbitale).
-SUN_R = 52
+# dietro, e l'occlusione non si vede.
+SUN_R = 56
+# Quanto e' esteso l'alone, in multipli del raggio del sole.
+HALO_MULT = 1.55
 # Quanto e' schiacciata l'ellisse: 1.0 sarebbe la vista perpendicolare al
 # piano orbitale (cerchio perfetto), 0 la vista di taglio. Il tetto e' dato
-# dall'occlusione -- con sole 64 e orbita esterna 168 il massimo e' 0.30,
-# oltre il quale il pianeta al culmine esce dal disco e non sparisce piu'.
+# dall'occlusione: RX_MAX * FLATTEN + raggio icona deve stare sotto SUN_R.
 FLATTEN = 0.26
 
 # Semiasse orizzontale della prima e dell'ultima orbita. Il minimo tiene il
-# pianeta fuori dal sole quando e' di profilo, il massimo lascia spazio
-# all'icona perche' non venga tagliata dal bordo del disegno.
-RX_MIN, RX_MAX = 76, 138
+# pianeta fuori dal sole quando e' di profilo.
+RX_MIN, RX_MAX = 80, 152
+
+R_ICON_MAX = 16     # raggio dell'icona piu' grande
+LABEL_H = 16        # spazio sotto l'icona per la percentuale
+MARGIN = 8
+
+# Il canvas si RICAVA dalla geometria invece di essere fissato a mano: cosi'
+# nessun elemento puo' finire tagliato dal bordo. L'alone e' spesso la cosa
+# piu' estesa di tutte e va incluso nel conto -- dimenticarlo lo faceva
+# tagliare sopra e sotto.
+_halo = SUN_R * HALO_MULT
+_ry_max = RX_MAX * FLATTEN
+_top = max(_halo, _ry_max + R_ICON_MAX)
+_bottom = max(_halo, _ry_max + R_ICON_MAX + LABEL_H)
+_side = max(_halo, RX_MAX + R_ICON_MAX)
+
+CX = round(_side + MARGIN)
+CY = round(_top + MARGIN)
+W = round(2 * (_side + MARGIN))
+H = round(_top + _bottom + 2 * MARGIN)
 
 
 def get(url, raw=False, attempts=6):
