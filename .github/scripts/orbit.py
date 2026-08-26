@@ -69,8 +69,19 @@ COLORS = {
 FALLBACK_COLOR = "#58a6ff"
 
 MAX_PLANETS = 4
-W, H = 400, 300
-CX, CY = 200, 150
+W, H = 400, 260
+CX, CY = 200, 130
+
+# Raggio del sole. Ogni orbita deve avere semiasse verticale MINORE di questo,
+# altrimenti il pianeta al culmine passa sopra il bordo del sole invece che
+# dietro, e l'occlusione non si vede: e' il motivo per cui le ellissi sono
+# molto schiacciate (vista molto inclinata sul piano orbitale).
+SUN_R = 38
+FLATTEN = 0.20
+
+# Aspetto dei pianeti nel semigiro dietro al sole.
+BACK_DIM = 0.45
+BACK_SCALE = 0.82
 
 
 def get(url, raw=False, attempts=6):
@@ -186,16 +197,17 @@ def build(totals):
         raise SystemExit("nessun linguaggio rilevato")
 
     planets = totals.most_common(MAX_PLANETS)
-    orbits, bodies = [], []
+    orbits, behind, front = [], [], []
 
     for i, (lang, size) in enumerate(planets):
         share = size / total
         color = COLORS.get(lang, FALLBACK_COLOR)
-        rx = 62 + i * 33
-        ry = round(rx * 0.60, 1)
+        rx = 70 + i * 36
+        ry = round(rx * FLATTEN, 1)
         # Il piu' usato sta piu' vicino al nucleo e gira piu' in fretta.
         dur = 16 + i * 7
         r_icon = 13 if share < 0.5 else 16
+        begin = f"-{i * dur / len(planets):.1f}s"
 
         orbits.append(
             f'<ellipse class="orbit" cx="{CX}" cy="{CY}" rx="{rx}" ry="{ry}"/>'
@@ -203,20 +215,32 @@ def build(totals):
 
         mark = icon_inline(lang, r_icon)
         if mark is None:
-            # Nessuna icona devicon (es. Makefile): pallino colorato + iniziale.
+            # Nessuna icona disponibile: pallino colorato con l'iniziale.
             mark = (f'<circle r="{r_icon}" fill="{color}"/>'
                     f'<text class="ini" y="4" text-anchor="middle">'
                     f'{esc(lang[0])}</text>')
 
-        bodies.append(
-            f'<g>'
-            f'<animateMotion dur="{dur}s" repeatCount="indefinite" '
-            f'begin="-{i * dur / len(planets):.1f}s" '
-            f'path="{ellipse_path(rx, ry)}"/>'
-            f'{mark}'
-            f'<text class="pct" y="{r_icon + 13}" text-anchor="middle">'
-            f'{share * 100:.1f}%</text>'
-            f'</g>'
+        label = (f'<text class="pct" y="{r_icon + 13}" text-anchor="middle">'
+                 f'{share * 100:.1f}%</text>')
+
+        motion = (f'<animateMotion dur="{dur}s" repeatCount="indefinite" '
+                  f'begin="{begin}" path="{ellipse_path(rx, ry)}"/>')
+
+        # Di ogni pianeta esistono due copie che percorrono la stessa orbita
+        # in perfetta sincronia: SMIL non sa cambiare l'ordine di disegno a
+        # meta' animazione, quindi una copia sta sotto al sole e l'altra sopra,
+        # e a turno si accendono. L'arco parte da ore 3 e gira in senso
+        # orario: la prima meta' del ciclo e' il semigiro basso (davanti),
+        # la seconda e' quello alto (dietro).
+        def fade(values):
+            return (f'<animate attributeName="opacity" dur="{dur}s" '
+                    f'repeatCount="indefinite" begin="{begin}" '
+                    f'calcMode="discrete" values="{values}" keyTimes="0;0.5"/>')
+
+        front.append(f'<g>{motion}{fade("1;0")}{mark}{label}</g>')
+        behind.append(
+            f'<g opacity="0">{motion}{fade(f"0;{BACK_DIM}")}'
+            f'<g transform="scale({BACK_SCALE})">{mark}{label}</g></g>'
         )
 
     nl = "\n  "
@@ -238,9 +262,10 @@ def build(totals):
     }}
   </style>
   {nl.join(orbits)}
-  <circle cx="{CX}" cy="{CY}" r="34" fill="url(#core)"/>
-  <circle cx="{CX}" cy="{CY}" r="34" fill="none" stroke="#58a6ff" stroke-opacity="0.5"/>
-  {nl.join(bodies)}
+  {nl.join(behind)}
+  <circle cx="{CX}" cy="{CY}" r="{SUN_R}" fill="url(#core)"/>
+  <circle cx="{CX}" cy="{CY}" r="{SUN_R}" fill="none" stroke="#58a6ff" stroke-opacity="0.5"/>
+  {nl.join(front)}
 </svg>
 """
 
