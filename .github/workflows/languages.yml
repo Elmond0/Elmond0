@@ -22,61 +22,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # I due grafici non si bloccano a vicenda: se uno fallisce l'altro
-      # viene comunque committato, e l'errore finisce in un file leggibile
-      # dal repo (i log delle Action richiedono un token per essere letti).
+      # continue-on-error tiene i due grafici indipendenti: se uno fallisce
+      # l'altro viene comunque generato e committato.
       - name: Build language donut chart
-        id: donut
         continue-on-error: true
         env:
           GH_USER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OUT: profile/languages.svg
-        run: |
-          set -o pipefail
-          python3 .github/scripts/langchart.py 2>&1 | tee /tmp/donut.log
+        run: python3 .github/scripts/langchart.py
 
       - name: Build language orbit chart
-        id: orbit
         continue-on-error: true
         env:
           GH_USER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ORBIT_OUT: profile/orbit.svg
-        run: |
-          set -o pipefail
-          python3 .github/scripts/orbit.py 2>&1 | tee /tmp/orbit.log
-
-      - name: Collect diagnostics
-        if: steps.donut.outcome == 'failure' || steps.orbit.outcome == 'failure'
-        run: |
-          {
-            echo "run $GITHUB_RUN_ID  $(date -u +%FT%TZ)"
-            echo "donut: ${{ steps.donut.outcome }}"
-            echo "orbit: ${{ steps.orbit.outcome }}"
-            echo "--- donut ---"; cat /tmp/donut.log 2>/dev/null
-            echo "--- orbit ---"; cat /tmp/orbit.log 2>/dev/null
-          } > profile/_charts-error.log
-
-      - name: Drop stale diagnostics
-        if: steps.donut.outcome == 'success' && steps.orbit.outcome == 'success'
-        run: rm -f profile/_charts-error.log
+        run: python3 .github/scripts/orbit.py
 
       - name: Commit charts
-        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A profile/
+          git add profile/languages.svg profile/orbit.svg
           git commit -m "chore: update language charts" || exit 0
           git pull --rebase --autostash
           git push
-
-      # Il badge del workflow deve restare onesto: se un grafico non si e'
-      # generato il job va segnato come fallito, anche se il commit e' andato.
-      - name: Fail if a chart could not be built
-        if: steps.donut.outcome == 'failure' || steps.orbit.outcome == 'failure'
-        run: |
-          echo "donut=${{ steps.donut.outcome }} orbit=${{ steps.orbit.outcome }}"
-          echo "dettagli in profile/_charts-error.log"
-          exit 1
