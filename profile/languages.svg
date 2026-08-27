@@ -7,10 +7,10 @@
       .pct  { fill: #8b949e; }
     }
   </style>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#555555" stroke-width="30" stroke-dasharray="230.68 158.87" stroke-dashoffset="-0.00" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#f34b7d" stroke-width="30" stroke-dasharray="143.84 245.72" stroke-dashoffset="-232.68" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#427819" stroke-width="30" stroke-dasharray="9.04 380.52" stroke-dashoffset="-378.52" transform="rotate(-90 100 100)"/>
-  <circle cx="212" cy="44" r="6" fill="#555555"/><text class="lang" x="228" y="48">C</text><text class="pct" x="384" y="48" text-anchor="end">59.7%</text>
-  <circle cx="212" cy="70" r="6" fill="#f34b7d"/><text class="lang" x="228" y="74">C++</text><text class="pct" x="384" y="74" text-anchor="end">37.4%</text>
-  <circle cx="212" cy="96" r="6" fill="#427819"/><text class="lang" x="228" y="100">Makefile</text><text class="pct" x="384" y="100" text-anchor="end">2.8%</text>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#555555" stroke-width="30" stroke-dasharray="233.51 156.05" stroke-dashoffset="-0.00" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#f34b7d" stroke-width="30" stroke-dasharray="140.93 248.63" stroke-dashoffset="-235.51" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#427819" stroke-width="30" stroke-dasharray="9.12 380.44" stroke-dashoffset="-378.44" transform="rotate(-90 100 100)"/>
+  <circle cx="212" cy="44" r="6" fill="#555555"/><text class="lang" x="228" y="48">C</text><text class="pct" x="384" y="48" text-anchor="end">60.5%</text>
+  <circle cx="212" cy="70" r="6" fill="#f34b7d"/><text class="lang" x="228" y="74">C++</text><text class="pct" x="384" y="74" text-anchor="end">36.7%</text>
+  <circle cx="212" cy="96" r="6" fill="#427819"/><text class="lang" x="228" y="100">Makefile</text><text class="pct" x="384" y="100" text-anchor="end">2.9%</text>
 </svg>
