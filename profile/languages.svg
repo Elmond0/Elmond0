@@ -7,10 +7,10 @@
       .pct  { fill: #8b949e; }
     }
   </style>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#555555" stroke-width="30" stroke-dasharray="233.66 155.89" stroke-dashoffset="-0.00" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#f34b7d" stroke-width="30" stroke-dasharray="141.05 248.51" stroke-dashoffset="-235.66" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#427819" stroke-width="30" stroke-dasharray="8.85 380.71" stroke-dashoffset="-378.71" transform="rotate(-90 100 100)"/>
-  <circle cx="212" cy="44" r="6" fill="#555555"/><text class="lang" x="228" y="48">C</text><text class="pct" x="384" y="48" text-anchor="end">60.5%</text>
-  <circle cx="212" cy="70" r="6" fill="#f34b7d"/><text class="lang" x="228" y="74">C++</text><text class="pct" x="384" y="74" text-anchor="end">36.7%</text>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#555555" stroke-width="30" stroke-dasharray="235.81 153.75" stroke-dashoffset="-0.00" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#f34b7d" stroke-width="30" stroke-dasharray="138.80 250.76" stroke-dashoffset="-237.81" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#427819" stroke-width="30" stroke-dasharray="8.95 380.61" stroke-dashoffset="-378.61" transform="rotate(-90 100 100)"/>
+  <circle cx="212" cy="44" r="6" fill="#555555"/><text class="lang" x="228" y="48">C</text><text class="pct" x="384" y="48" text-anchor="end">61.0%</text>
+  <circle cx="212" cy="70" r="6" fill="#f34b7d"/><text class="lang" x="228" y="74">C++</text><text class="pct" x="384" y="74" text-anchor="end">36.1%</text>
   <circle cx="212" cy="96" r="6" fill="#427819"/><text class="lang" x="228" y="100">Makefile</text><text class="pct" x="384" y="100" text-anchor="end">2.8%</text>
 </svg>
