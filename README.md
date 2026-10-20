@@ -20,7 +20,7 @@
 
 ## 🧑‍💻 About Me
 
-<img align="right" width="390" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42.svg" alt="42 cursus badge"/>
+<img align="right" width="390" src="https://raw.githubusercontent.com/Elmond0/Elmond0/main/profile/badge42.svg" alt=42/>
 
 An unconventional path: years spent in high-pressure professional kitchens in **Italy** and **England**, followed by a complete career change into IT. Today I study at **42 Firenze**, a tuition-free peer-to-peer coding school, where I work on real C and C++ projects every day.
 
