@@ -7,14 +7,14 @@
       .pct  { fill: #8b949e; }
     }
   </style>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#555555" stroke-width="30" stroke-dasharray="230.52 159.04" stroke-dashoffset="-0.00" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#f34b7d" stroke-width="30" stroke-dasharray="135.66 253.90" stroke-dashoffset="-232.52" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#427819" stroke-width="30" stroke-dasharray="8.70 380.85" stroke-dashoffset="-370.17" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#f85149" stroke-width="30" stroke-dasharray="5.91 383.65" stroke-dashoffset="-380.88" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#89e051" stroke-width="30" stroke-dasharray="0.51 389.04" stroke-dashoffset="-388.79" transform="rotate(-90 100 100)"/>
-  <circle cx="212" cy="44" r="6" fill="#555555"/><text class="lang" x="228" y="48">C</text><text class="pct" x="384" y="48" text-anchor="end">59.7%</text>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#555555" stroke-width="30" stroke-dasharray="230.11 159.45" stroke-dashoffset="-0.00" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#f34b7d" stroke-width="30" stroke-dasharray="135.41 254.15" stroke-dashoffset="-232.11" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#427819" stroke-width="30" stroke-dasharray="8.68 380.87" stroke-dashoffset="-369.52" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#f85149" stroke-width="30" stroke-dasharray="5.89 383.66" stroke-dashoffset="-380.20" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#89e051" stroke-width="30" stroke-dasharray="0.97 388.58" stroke-dashoffset="-388.10" transform="rotate(-90 100 100)"/>
+  <circle cx="212" cy="44" r="6" fill="#555555"/><text class="lang" x="228" y="48">C</text><text class="pct" x="384" y="48" text-anchor="end">59.6%</text>
   <circle cx="212" cy="70" r="6" fill="#f34b7d"/><text class="lang" x="228" y="74">C++</text><text class="pct" x="384" y="74" text-anchor="end">35.3%</text>
   <circle cx="212" cy="96" r="6" fill="#427819"/><text class="lang" x="228" y="100">Makefile</text><text class="pct" x="384" y="100" text-anchor="end">2.7%</text>
   <circle cx="212" cy="122" r="6" fill="#f85149"/><text class="lang" x="228" y="126">C#</text><text class="pct" x="384" y="126" text-anchor="end">2.0%</text>
-  <circle cx="212" cy="148" r="6" fill="#89e051"/><text class="lang" x="228" y="152">Shell</text><text class="pct" x="384" y="152" text-anchor="end">0.2%</text>
+  <circle cx="212" cy="148" r="6" fill="#89e051"/><text class="lang" x="228" y="152">Shell</text><text class="pct" x="384" y="152" text-anchor="end">0.4%</text>
 </svg>
