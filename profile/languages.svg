@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200" role="img" aria-label="Language distribution">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250" role="img" aria-label="Language distribution">
   <style>
     .lang { font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #24292f; }
     .pct  { font: 400 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #57606a; }
@@ -7,14 +7,18 @@
       .pct  { fill: #8b949e; }
     }
   </style>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#555555" stroke-width="30" stroke-dasharray="230.11 159.45" stroke-dashoffset="-0.00" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#f34b7d" stroke-width="30" stroke-dasharray="135.41 254.15" stroke-dashoffset="-232.11" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#427819" stroke-width="30" stroke-dasharray="8.68 380.87" stroke-dashoffset="-369.52" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#f85149" stroke-width="30" stroke-dasharray="5.89 383.66" stroke-dashoffset="-380.20" transform="rotate(-90 100 100)"/>
-  <circle cx="100" cy="100" r="62" fill="none" stroke="#89e051" stroke-width="30" stroke-dasharray="0.97 388.58" stroke-dashoffset="-388.10" transform="rotate(-90 100 100)"/>
-  <circle cx="212" cy="44" r="6" fill="#555555"/><text class="lang" x="228" y="48">C</text><text class="pct" x="384" y="48" text-anchor="end">59.6%</text>
-  <circle cx="212" cy="70" r="6" fill="#f34b7d"/><text class="lang" x="228" y="74">C++</text><text class="pct" x="384" y="74" text-anchor="end">35.3%</text>
-  <circle cx="212" cy="96" r="6" fill="#427819"/><text class="lang" x="228" y="100">Makefile</text><text class="pct" x="384" y="100" text-anchor="end">2.7%</text>
-  <circle cx="212" cy="122" r="6" fill="#f85149"/><text class="lang" x="228" y="126">C#</text><text class="pct" x="384" y="126" text-anchor="end">2.0%</text>
-  <circle cx="212" cy="148" r="6" fill="#89e051"/><text class="lang" x="228" y="152">Shell</text><text class="pct" x="384" y="152" text-anchor="end">0.4%</text>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#555555" stroke-width="30" stroke-dasharray="206.18 183.38" stroke-dashoffset="-0.00" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#f34b7d" stroke-width="30" stroke-dasharray="121.25 268.31" stroke-dashoffset="-208.18" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#d29922" stroke-width="30" stroke-dasharray="35.80 353.76" stroke-dashoffset="-331.43" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#427819" stroke-width="30" stroke-dasharray="7.58 381.97" stroke-dashoffset="-369.23" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#e34c26" stroke-width="30" stroke-dasharray="4.24 385.32" stroke-dashoffset="-378.81" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#563d7c" stroke-width="30" stroke-dasharray="1.92 387.63" stroke-dashoffset="-385.05" transform="rotate(-90 100 100)"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#58a6ff" stroke-width="30" stroke-dasharray="1.08 388.48" stroke-dashoffset="-387.94" transform="rotate(-90 100 100)"/>
+  <circle cx="212" cy="44" r="6" fill="#555555"/><text class="lang" x="228" y="48">C</text><text class="pct" x="384" y="48" text-anchor="end">53.4%</text>
+  <circle cx="212" cy="70" r="6" fill="#f34b7d"/><text class="lang" x="228" y="74">C++</text><text class="pct" x="384" y="74" text-anchor="end">31.6%</text>
+  <circle cx="212" cy="96" r="6" fill="#d29922"/><text class="lang" x="228" y="100">C#</text><text class="pct" x="384" y="100" text-anchor="end">9.7%</text>
+  <circle cx="212" cy="122" r="6" fill="#427819"/><text class="lang" x="228" y="126">Makefile</text><text class="pct" x="384" y="126" text-anchor="end">2.5%</text>
+  <circle cx="212" cy="148" r="6" fill="#e34c26"/><text class="lang" x="228" y="152">HTML</text><text class="pct" x="384" y="152" text-anchor="end">1.6%</text>
+  <circle cx="212" cy="174" r="6" fill="#563d7c"/><text class="lang" x="228" y="178">CSS</text><text class="pct" x="384" y="178" text-anchor="end">0.7%</text>
+  <circle cx="212" cy="200" r="6" fill="#58a6ff"/><text class="lang" x="228" y="204">Other</text><text class="pct" x="384" y="204" text-anchor="end">0.4%</text>
 </svg>
