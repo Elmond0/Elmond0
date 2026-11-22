@@ -15,7 +15,7 @@
 }
 </style>
 
-                    <path id='path0'>
+                            <path id='path0'>
                             <!-- Single line -->
                                 <animate id='d0' attributeName='d' begin='0s;d1.end'
                     dur='4700ms' fill='remove'
@@ -29,7 +29,7 @@
             Software Developer in Training @ 42 Firenze
         </textPath>
     </text>
-        <path id='path1'>
+                <path id='path1'>
                             <!-- Single line -->
                                 <animate id='d1' attributeName='d' begin='d0.end'
                     dur='4700ms' fill='remove'
